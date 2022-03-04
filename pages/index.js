@@ -1,7 +1,11 @@
 import Head from "next/head";
 import Header from "../components/header";
+import { getSession } from "next-auth/react";
+import Login from "./login";
 
-export default function Home() {
+export default function Home({ session }) {
+  if (!session) return <Login />;
+
   return (
     <div>
       <Head>
@@ -15,7 +19,17 @@ export default function Home() {
       {/* Left-Sidebar */}
       {/* Post section */}
       {/* Right-Sidebar */}
-
     </div>
   );
+}
+
+export async function getServerSideProps(context) {
+  // Get the user
+  const session = await getSession(context);
+
+  return {
+    props: {
+      session,
+    },
+  };
 }

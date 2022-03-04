@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import HeaderItem from "./headerItem";
+import { signOut, useSession } from "next-auth/react";
 
 import {
   SearchIcon,
@@ -21,6 +22,7 @@ import {
 
 function Header() {
   const [isActive, setIsActive] = useState(true);
+  const { data: session, status } = useSession()
 
   return (
     <div className="sticky top-0 z-50 bg-white flex items-center p-2 lg:px-5 shadow-md">
@@ -58,12 +60,13 @@ function Header() {
       {/* right */}
       <div className="flex items-center sm:space-x-2 justify-end">
         <Image
-          src="https://upload.wikimedia.org/wikipedia/en/0/04/Facebook_f_logo_%282021%29.svg"
+          src={session?.user?.image}
           height={40}
           width={40}
           layout="fixed"
           alt="profile-pic"
-          className="cursor-pointer"
+          className="cursor-pointer rounded-full object-contain"
+          onClick={signOut}
         />
         <p className="whitespace-nowrap font-semibold pr-3">Ganesh Kumar</p>
         <ViewGridIcon className="rightIcon" />
