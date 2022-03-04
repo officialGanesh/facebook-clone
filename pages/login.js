@@ -1,11 +1,14 @@
 import { signIn } from "next-auth/react";
+import Head from "next/head";
 import Image from "next/image";
 import React from "react";
 
 function Login() {
   return (
     <div>
-      
+      <Head>
+        <title>Facebook - log in or sign up</title>
+      </Head>
 
       <div className="grid place-items-center mt-56">
         <Image

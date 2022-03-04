@@ -1,7 +1,8 @@
 import Head from "next/head";
-import Header from "../components/header";
 import { getSession } from "next-auth/react";
 import Login from "./login";
+import Header from "../components/header";
+import Sidebar from "../components/sidebar";
 
 export default function Home({ session }) {
   if (!session) return <Login />;
@@ -17,6 +18,7 @@ export default function Home({ session }) {
       {/* Header */}
       <Header />
       {/* Left-Sidebar */}
+      <Sidebar />
       {/* Post section */}
       {/* Right-Sidebar */}
     </div>

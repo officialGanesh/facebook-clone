@@ -68,7 +68,7 @@ function Header() {
           className="cursor-pointer rounded-full object-contain"
           onClick={signOut}
         />
-        <p className="whitespace-nowrap font-semibold pr-3">Ganesh Kumar</p>
+        <p className="whitespace-nowrap font-semibold pr-3">{session.user?.name}</p>
         <ViewGridIcon className="rightIcon" />
         <PlusIcon className="rightIcon" />
         <LightningBoltIcon className="rightIcon" />
