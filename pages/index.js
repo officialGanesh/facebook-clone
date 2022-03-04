@@ -3,6 +3,7 @@ import { getSession } from "next-auth/react";
 import Login from "./login";
 import Header from "../components/header";
 import Sidebar from "../components/sidebar";
+import RightSidebar from "../components/rightSidebar";
 
 export default function Home({ session }) {
   if (!session) return <Login />;
@@ -17,10 +18,14 @@ export default function Home({ session }) {
 
       {/* Header */}
       <Header />
+      <main className="flex justify-between">
+
       {/* Left-Sidebar */}
       <Sidebar />
       {/* Post section */}
       {/* Right-Sidebar */}
+      <RightSidebar />
+      </main>
     </div>
   );
 }

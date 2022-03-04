@@ -25,7 +25,7 @@ function Header() {
   const { data: session, status } = useSession()
 
   return (
-    <div className="sticky top-0 z-50 bg-white flex items-center p-2 lg:px-5 shadow-md">
+    <div className="sticky top-0 z-50 bg-white flex items-center p-2 lg:px-5 shadow-md w-full">
       {/* left */}
 
       <div className="flex items-center">
@@ -49,7 +49,7 @@ function Header() {
 
       {/* center */}
       <div className="flex justify-center flex-grow">
-        <div className="flex space-x-6 md:space-x-2">
+        <div className="flex space-x-7 md:space-x-2">
           <HeaderItem Icon={HomeIcon} isActive={isActive} />
           <HeaderItem Icon={PlayIcon} />
           <HeaderItem Icon={ArchiveIcon} />
@@ -68,7 +68,7 @@ function Header() {
           className="cursor-pointer rounded-full object-contain"
           onClick={signOut}
         />
-        <p className="whitespace-nowrap font-semibold pr-3">{session.user?.name}</p>
+        <p className="whitespace-nowrap font-semibold pr-3 hidden md:inline-flex">{session.user?.name}</p>
         <ViewGridIcon className="rightIcon" />
         <PlusIcon className="rightIcon" />
         <LightningBoltIcon className="rightIcon" />

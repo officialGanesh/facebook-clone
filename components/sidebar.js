@@ -18,7 +18,7 @@ function Sidebar() {
   const [isDropDown, setIsDropDown] = useState(true);
   const { data: session, status } = useSession();
   return (
-    <div className="max-w-[600px]  hidden md:flex lg:min-w-[300px] mt-3  flex-col justify-start ">
+    <div className="max-w-[600px]  hidden md:flex lg:min-w-[300px] mt-3  flex-col justify-start">
       <div className="flex items-center space-x-2 hover:bg-gray-200 rounded-xl p-3 w-[350px] cursor-pointer">
         <Image
           src={session.user?.image}
