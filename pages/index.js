@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Header from "../components/header";
 
 export default function Home() {
   return (
@@ -9,7 +10,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <h1 className="text-blue-600 text-center mt-56 text-7xl font-semibold">Facebook</h1>
+      {/* Header */}
+      <Header />
+      {/* Left-Sidebar */}
+      {/* Post section */}
+      {/* Right-Sidebar */}
+
     </div>
   );
 }
