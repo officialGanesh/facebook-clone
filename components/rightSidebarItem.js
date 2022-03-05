@@ -17,7 +17,7 @@ function RightSidebarItem({ isActive, user }) {
           className="rounded-full object-contain border "
         />
         {isActive && (
-          <span className="absolute h-[0.65rem] w-[0.65rem] rounded-full bg-blue-600 right-0 top-7 left-7"></span>
+          <span className="absolute h-[0.60rem] w-[0.60rem] rounded-full bg-blue-600 right-0 top-7 left-7"></span>
         )}
       </div>
       <p className="font-medium text-md whitespace-nowrap">{user}</p>

@@ -22,7 +22,7 @@ import {
 
 function Header() {
   const [isActive, setIsActive] = useState(true);
-  const { data: session, status } = useSession()
+  const { data: session, status } = useSession();
 
   return (
     <div className="sticky top-0 z-50 bg-white flex items-center p-2 lg:px-5 shadow-md w-full">
@@ -68,7 +68,9 @@ function Header() {
           className="cursor-pointer rounded-full object-contain"
           onClick={signOut}
         />
-        <p className="whitespace-nowrap font-semibold pr-3 hidden md:inline-flex">{session.user?.name}</p>
+        <p className="whitespace-nowrap font-semibold pr-3 hidden md:inline-flex">
+          {session.user?.name}
+        </p>
         <ViewGridIcon className="rightIcon" />
         <PlusIcon className="rightIcon" />
         <LightningBoltIcon className="rightIcon" />

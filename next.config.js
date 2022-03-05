@@ -6,7 +6,8 @@ const nextConfig = {
       "upload.wikimedia.org",
       "static.xx.fbcdn.net",
       "platform-lookaside.fbsbx.com",
-      "cdn-icons.flaticon.com"
+      "cdn-icons.flaticon.com",
+      "links.papareact.com"
     ],
   },
 };
