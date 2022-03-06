@@ -1,4 +1,5 @@
 import React from "react";
+import InputBox from "./inputBox";
 import Stories from "./stories";
 
 function Feed() {
@@ -8,6 +9,7 @@ function Feed() {
         {/* Story */}
         <Stories />
         {/* New post */}
+        <InputBox />
         {/* Show post */}
       </div>
     </div>
