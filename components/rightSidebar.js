@@ -18,13 +18,13 @@ function RightSidebar() {
         </div>
       </div>
       <div className="flex items-center  w-350px] cursor-pointer flex-col ">
-        <RightSidebarItem isActive={true} user="Elon Musk"/>
-        <RightSidebarItem isActive={true} user="Tom Hardy"/>
-        <RightSidebarItem isActive={true} user="Bill Gates"/>
-        <RightSidebarItem user="Bruce Wayne"/>
-        <RightSidebarItem user="Messi"/>
-        <RightSidebarItem user="Peter Parker"/>
-        <RightSidebarItem user="Tony Stark"/>
+        <RightSidebarItem isActive={true} user="Elon Musk" src="https://links.papareact.com/kxk"/>
+        <RightSidebarItem isActive={true} user="Bill Gates" src="https://links.papareact.com/zvy"/>
+        <RightSidebarItem isActive={true} user="Mark Zuckerberg" src="https://links.papareact.com/snf"/>
+        <RightSidebarItem user="Harry Potter" src="https://links.papareact.com/d0c"/>
+        
+        <RightSidebarItem user="James Bond" src="https://links.papareact.com/r57"/>
+        
       </div>
     </div>
   );

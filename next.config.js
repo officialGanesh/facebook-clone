@@ -7,7 +7,8 @@ const nextConfig = {
       "static.xx.fbcdn.net",
       "platform-lookaside.fbsbx.com",
       "cdn-icons.flaticon.com",
-      "links.papareact.com"
+      "links.papareact.com",
+      "firebasestorage.googleapis.com"
     ],
   },
 };
